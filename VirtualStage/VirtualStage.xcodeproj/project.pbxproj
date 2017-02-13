@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		838A0B361C782C1C00D7D986 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A0B351C782C1C00D7D986 /* AppDelegate.m */; };
+		838A0B391C782C1C00D7D986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A0B381C782C1C00D7D986 /* main.m */; };
+		838A0B3B1C782C1C00D7D986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B3A1C782C1C00D7D986 /* Assets.xcassets */; };
+		838A0B3E1C782C1C00D7D986 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B3C1C782C1C00D7D986 /* MainMenu.xib */; };
+		838A0B471C782C6900D7D986 /* libopenal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 838A0B461C782C6900D7D986 /* libopenal.dylib */; };
+		838A0B5D1C78B93500D7D986 /* bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B581C78B93500D7D986 /* bass.wav */; };
+		838A0B5E1C78B93500D7D986 /* battery.wav in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B591C78B93500D7D986 /* battery.wav */; };
+		838A0B5F1C78B93500D7D986 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B5A1C78B93500D7D986 /* guitar.wav */; };
+		838A0B601C78B93500D7D986 /* guitar2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B5B1C78B93500D7D986 /* guitar2.wav */; };
+		838A0B611C78B93500D7D986 /* vocal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B5C1C78B93500D7D986 /* vocal.wav */; };
+		838A0B651C78C9DE00D7D986 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A0B631C78C9DE00D7D986 /* MasterViewController.m */; };
+		838A0B661C78C9DE00D7D986 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838A0B641C78C9DE00D7D986 /* MasterViewController.xib */; };
+		838A0B6A1C78D55A00D7D986 /* OALSoftPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 838A0B681C78D55A00D7D986 /* OALSoftPlayer.cpp */; };
+		838A0B6D1C78F93F00D7D986 /* OALSoftCPPWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 838A0B6C1C78F93F00D7D986 /* OALSoftCPPWrapper.mm */; };
+		838AF39F1CB48F8600F83D11 /* StageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AF39E1CB48F8600F83D11 /* StageView.m */; };
+		838AF3A11CB4C6FD00F83D11 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838AF3A01CB4C6FD00F83D11 /* QuartzCore.framework */; };
+		838AF3AA1CB55C3800F83D11 /* bass.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A31CB55C3800F83D11 /* bass.png */; };
+		838AF3AB1CB55C3800F83D11 /* drum.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A41CB55C3800F83D11 /* drum.png */; };
+		838AF3AC1CB55C3800F83D11 /* guitar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A51CB55C3800F83D11 /* guitar1.png */; };
+		838AF3AD1CB55C3800F83D11 /* guitar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A61CB55C3800F83D11 /* guitar2.png */; };
+		838AF3AE1CB55C3800F83D11 /* listener.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A71CB55C3800F83D11 /* listener.png */; };
+		838AF3AF1CB55C3800F83D11 /* stagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A81CB55C3800F83D11 /* stagebg.png */; };
+		838AF3B01CB55C3800F83D11 /* vocal.png in Resources */ = {isa = PBXBuildFile; fileRef = 838AF3A91CB55C3800F83D11 /* vocal.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		838A0B311C782C1C00D7D986 /* VirtualStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		838A0B341C782C1C00D7D986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = VirtualStage/AppDelegate.h; sourceTree = "<group>"; };
+		838A0B351C782C1C00D7D986 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = VirtualStage/AppDelegate.m; sourceTree = "<group>"; };
+		838A0B381C782C1C00D7D986 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		838A0B3A1C782C1C00D7D986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		838A0B3D1C782C1C00D7D986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		838A0B3F1C782C1C00D7D986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838A0B461C782C6900D7D986 /* libopenal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenal.dylib; path = VirtualStage/libopenal.dylib; sourceTree = "<group>"; };
+		838A0B581C78B93500D7D986 /* bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass.wav; sourceTree = "<group>"; };
+		838A0B591C78B93500D7D986 /* battery.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = battery.wav; sourceTree = "<group>"; };
+		838A0B5A1C78B93500D7D986 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		838A0B5B1C78B93500D7D986 /* guitar2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar2.wav; sourceTree = "<group>"; };
+		838A0B5C1C78B93500D7D986 /* vocal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vocal.wav; sourceTree = "<group>"; };
+		838A0B621C78C9DE00D7D986 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		838A0B631C78C9DE00D7D986 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		838A0B641C78C9DE00D7D986 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		838A0B681C78D55A00D7D986 /* OALSoftPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OALSoftPlayer.cpp; sourceTree = "<group>"; };
+		838A0B691C78D55A00D7D986 /* OALSoftPlayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OALSoftPlayer.hpp; sourceTree = "<group>"; };
+		838A0B6B1C78F93F00D7D986 /* OALSoftCPPWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSoftCPPWrapper.h; sourceTree = "<group>"; };
+		838A0B6C1C78F93F00D7D986 /* OALSoftCPPWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OALSoftCPPWrapper.mm; sourceTree = "<group>"; };
+		838A0B701C79591700D7D986 /* VirtualStage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VirtualStage.entitlements; sourceTree = "<group>"; };
+		838AF39D1CB48F8600F83D11 /* StageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageView.h; sourceTree = "<group>"; };
+		838AF39E1CB48F8600F83D11 /* StageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageView.m; sourceTree = "<group>"; };
+		838AF3A01CB4C6FD00F83D11 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		838AF3A31CB55C3800F83D11 /* bass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bass.png; path = pics/bass.png; sourceTree = "<group>"; };
+		838AF3A41CB55C3800F83D11 /* drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drum.png; path = pics/drum.png; sourceTree = "<group>"; };
+		838AF3A51CB55C3800F83D11 /* guitar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guitar1.png; path = pics/guitar1.png; sourceTree = "<group>"; };
+		838AF3A61CB55C3800F83D11 /* guitar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guitar2.png; path = pics/guitar2.png; sourceTree = "<group>"; };
+		838AF3A71CB55C3800F83D11 /* listener.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = listener.png; path = pics/listener.png; sourceTree = "<group>"; };
+		838AF3A81CB55C3800F83D11 /* stagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stagebg.png; path = pics/stagebg.png; sourceTree = "<group>"; };
+		838AF3A91CB55C3800F83D11 /* vocal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vocal.png; path = pics/vocal.png; sourceTree = "<group>"; };
+		839E8C1E1CB759860059639F /* StageObjectType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StageObjectType.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		838A0B2E1C782C1C00D7D986 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838AF3A11CB4C6FD00F83D11 /* QuartzCore.framework in Frameworks */,
+				838A0B471C782C6900D7D986 /* libopenal.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		838A0B281C782C1C00D7D986 = {
+			isa = PBXGroup;
+			children = (
+				838A0B671C78D44D00D7D986 /* CoreLogic */,
+				838A0B491C782CF300D7D986 /* GUI */,
+				838A0B481C782CE400D7D986 /* sounds */,
+				838AF3A21CB55C1900F83D11 /* pics */,
+				838A0B451C782C2D00D7D986 /* Lib */,
+				838A0B331C782C1C00D7D986 /* VirtualStage */,
+				838A0B321C782C1C00D7D986 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		838A0B321C782C1C00D7D986 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				838A0B311C782C1C00D7D986 /* VirtualStage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		838A0B331C782C1C00D7D986 /* VirtualStage */ = {
+			isa = PBXGroup;
+			children = (
+				838A0B701C79591700D7D986 /* VirtualStage.entitlements */,
+				838A0B3A1C782C1C00D7D986 /* Assets.xcassets */,
+				838A0B3F1C782C1C00D7D986 /* Info.plist */,
+				838A0B371C782C1C00D7D986 /* Supporting Files */,
+			);
+			path = VirtualStage;
+			sourceTree = "<group>";
+		};
+		838A0B371C782C1C00D7D986 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				838A0B381C782C1C00D7D986 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		838A0B451C782C2D00D7D986 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				838AF3A01CB4C6FD00F83D11 /* QuartzCore.framework */,
+				838A0B461C782C6900D7D986 /* libopenal.dylib */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		838A0B481C782CE400D7D986 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				838A0B581C78B93500D7D986 /* bass.wav */,
+				838A0B591C78B93500D7D986 /* battery.wav */,
+				838A0B5A1C78B93500D7D986 /* guitar.wav */,
+				838A0B5B1C78B93500D7D986 /* guitar2.wav */,
+				838A0B5C1C78B93500D7D986 /* vocal.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		838A0B491C782CF300D7D986 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				838A0B341C782C1C00D7D986 /* AppDelegate.h */,
+				838A0B351C782C1C00D7D986 /* AppDelegate.m */,
+				838A0B3C1C782C1C00D7D986 /* MainMenu.xib */,
+				838A0B621C78C9DE00D7D986 /* MasterViewController.h */,
+				838A0B631C78C9DE00D7D986 /* MasterViewController.m */,
+				838A0B641C78C9DE00D7D986 /* MasterViewController.xib */,
+				838AF39D1CB48F8600F83D11 /* StageView.h */,
+				838AF39E1CB48F8600F83D11 /* StageView.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		838A0B671C78D44D00D7D986 /* CoreLogic */ = {
+			isa = PBXGroup;
+			children = (
+				838A0B681C78D55A00D7D986 /* OALSoftPlayer.cpp */,
+				838A0B691C78D55A00D7D986 /* OALSoftPlayer.hpp */,
+				838A0B6B1C78F93F00D7D986 /* OALSoftCPPWrapper.h */,
+				838A0B6C1C78F93F00D7D986 /* OALSoftCPPWrapper.mm */,
+				839E8C1E1CB759860059639F /* StageObjectType.h */,
+			);
+			name = CoreLogic;
+			sourceTree = "<group>";
+		};
+		838AF3A21CB55C1900F83D11 /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				838AF3A31CB55C3800F83D11 /* bass.png */,
+				838AF3A41CB55C3800F83D11 /* drum.png */,
+				838AF3A51CB55C3800F83D11 /* guitar1.png */,
+				838AF3A61CB55C3800F83D11 /* guitar2.png */,
+				838AF3A71CB55C3800F83D11 /* listener.png */,
+				838AF3A81CB55C3800F83D11 /* stagebg.png */,
+				838AF3A91CB55C3800F83D11 /* vocal.png */,
+			);
+			name = pics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		838A0B301C782C1C00D7D986 /* VirtualStage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838A0B421C782C1C00D7D986 /* Build configuration list for PBXNativeTarget "VirtualStage" */;
+			buildPhases = (
+				838A0B2D1C782C1C00D7D986 /* Sources */,
+				838A0B2E1C782C1C00D7D986 /* Frameworks */,
+				838A0B2F1C782C1C00D7D986 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualStage;
+			productName = VirtualStage;
+			productReference = 838A0B311C782C1C00D7D986 /* VirtualStage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		838A0B291C782C1C00D7D986 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Yunhao Wan";
+				TargetAttributes = {
+					838A0B301C782C1C00D7D986 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DD93PXMG7Q;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 838A0B2C1C782C1C00D7D986 /* Build configuration list for PBXProject "VirtualStage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 838A0B281C782C1C00D7D986;
+			productRefGroup = 838A0B321C782C1C00D7D986 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				838A0B301C782C1C00D7D986 /* VirtualStage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		838A0B2F1C782C1C00D7D986 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838A0B661C78C9DE00D7D986 /* MasterViewController.xib in Resources */,
+				838AF3AB1CB55C3800F83D11 /* drum.png in Resources */,
+				838A0B5D1C78B93500D7D986 /* bass.wav in Resources */,
+				838AF3B01CB55C3800F83D11 /* vocal.png in Resources */,
+				838AF3AE1CB55C3800F83D11 /* listener.png in Resources */,
+				838AF3AA1CB55C3800F83D11 /* bass.png in Resources */,
+				838AF3AD1CB55C3800F83D11 /* guitar2.png in Resources */,
+				838A0B5F1C78B93500D7D986 /* guitar.wav in Resources */,
+				838A0B3B1C782C1C00D7D986 /* Assets.xcassets in Resources */,
+				838A0B601C78B93500D7D986 /* guitar2.wav in Resources */,
+				838AF3AC1CB55C3800F83D11 /* guitar1.png in Resources */,
+				838A0B611C78B93500D7D986 /* vocal.wav in Resources */,
+				838A0B5E1C78B93500D7D986 /* battery.wav in Resources */,
+				838A0B3E1C782C1C00D7D986 /* MainMenu.xib in Resources */,
+				838AF3AF1CB55C3800F83D11 /* stagebg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		838A0B2D1C782C1C00D7D986 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838A0B391C782C1C00D7D986 /* main.m in Sources */,
+				838A0B651C78C9DE00D7D986 /* MasterViewController.m in Sources */,
+				838A0B6D1C78F93F00D7D986 /* OALSoftCPPWrapper.mm in Sources */,
+				838AF39F1CB48F8600F83D11 /* StageView.m in Sources */,
+				838A0B361C782C1C00D7D986 /* AppDelegate.m in Sources */,
+				838A0B6A1C78D55A00D7D986 /* OALSoftPlayer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		838A0B3C1C782C1C00D7D986 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838A0B3D1C782C1C00D7D986 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = VirtualStage;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		838A0B401C782C1C00D7D986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		838A0B411C782C1C00D7D986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		838A0B431C782C1C00D7D986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VirtualStage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VirtualStage",
+					/usr/local/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ufl.chris.cpp.VirtualStage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/;
+			};
+			name = Debug;
+		};
+		838A0B441C782C1C00D7D986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VirtualStage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VirtualStage",
+					/usr/local/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ufl.chris.cpp.VirtualStage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		838A0B2C1C782C1C00D7D986 /* Build configuration list for PBXProject "VirtualStage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838A0B401C782C1C00D7D986 /* Debug */,
+				838A0B411C782C1C00D7D986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838A0B421C782C1C00D7D986 /* Build configuration list for PBXNativeTarget "VirtualStage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838A0B431C782C1C00D7D986 /* Debug */,
+				838A0B441C782C1C00D7D986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 838A0B291C782C1C00D7D986 /* Project object */;
+}

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController">
+            <connections>
+                <outlet property="bassGain" destination="asj-Nu-V5R" id="I0q-3N-Xvs"/>
+                <outlet property="bassPositionDisplay" destination="yqu-mH-m4u" id="Ros-gk-Dxr"/>
+                <outlet property="drumGain" destination="Vrk-g7-Vc9" id="tSY-fg-6K9"/>
+                <outlet property="drumPositionDisplay" destination="QgN-fD-nGK" id="QbC-Ct-ZF3"/>
+                <outlet property="guitarOneGain" destination="pXT-PW-4wf" id="Jr0-8H-f2b"/>
+                <outlet property="guitarOnePositionDisplay" destination="wuf-dB-ywf" id="WPk-Lt-Hel"/>
+                <outlet property="guitarTwoGain" destination="aVR-vQ-AbF" id="uAG-lJ-I5j"/>
+                <outlet property="guitarTwoPositionDisplay" destination="To8-xy-xCM" id="ibv-NV-08A"/>
+                <outlet property="listenerPositionDisplay" destination="puU-Gs-6q2" id="1hB-cX-4eT"/>
+                <outlet property="masterPitchValue" destination="5fY-B5-K5z" id="fcm-g9-CRY"/>
+                <outlet property="stageView" destination="RCI-9V-Q00" id="Yot-E1-fCF"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="vocalGain" destination="6j4-c6-dPR" id="9W2-Ca-jkL"/>
+                <outlet property="vocalPositionDisplay" destination="TTl-Iu-YfF" id="FOu-DT-rhF"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="1200" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <customView wantsLayer="YES" id="RCI-9V-Q00" customClass="StageView">
+                    <rect key="frame" x="0.0" y="9" width="900" height="750"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </customView>
+                <button verticalHuggingPriority="750" id="9G9-d9-BT3">
+                    <rect key="frame" x="902" y="726" width="284" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Play/Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="I5m-FC-kGg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="16" name="AppleBraille-Pinpoint6Dot"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playPausePlayback:" target="-2" id="HY8-Sc-f8E"/>
+                    </connections>
+                </button>
+                <box title="Volume/Gain" borderType="line" id="pEE-AN-7Uf">
+                    <rect key="frame" x="905" y="478" width="278" height="235"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="N5T-JI-Ddg">
+                        <rect key="frame" x="1" y="1" width="276" height="219"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7CN-gs-z96">
+                                <rect key="frame" x="20" y="180" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="guitar1" id="5UZ-5B-p4h"/>
+                            </imageView>
+                            <slider verticalHuggingPriority="750" id="pXT-PW-4wf">
+                                <rect key="frame" x="69" y="178" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="below" sliderType="linear" id="A9M-ck-qYx"/>
+                                <connections>
+                                    <action selector="guitarOneGainValueChanged:" target="-2" id="bvf-uW-Dj3"/>
+                                </connections>
+                            </slider>
+                            <slider verticalHuggingPriority="750" id="aVR-vQ-AbF">
+                                <rect key="frame" x="69" y="138" width="189" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="6pa-EJ-aBz"/>
+                                <connections>
+                                    <action selector="guitarTwoGainChanged:" target="-2" id="vi6-DD-d94"/>
+                                </connections>
+                            </slider>
+                            <slider verticalHuggingPriority="750" id="6j4-c6-dPR">
+                                <rect key="frame" x="69" y="97" width="189" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="ZSG-D6-bLk"/>
+                                <connections>
+                                    <action selector="vocalGainChanged:" target="-2" id="5Bt-Cg-yVJ"/>
+                                </connections>
+                            </slider>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Hu1-ny-mBN">
+                                <rect key="frame" x="20" y="140" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="guitar2" id="RsB-kZ-0m4"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VRP-qa-qCJ">
+                                <rect key="frame" x="20" y="100" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="vocal" id="px0-f0-GOo"/>
+                            </imageView>
+                            <slider verticalHuggingPriority="750" id="Vrk-g7-Vc9">
+                                <rect key="frame" x="69" y="58" width="189" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="v3l-YW-JgL"/>
+                                <connections>
+                                    <action selector="drumGainChanged:" target="-2" id="h9u-DX-K7d"/>
+                                </connections>
+                            </slider>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3v6-vS-2A7">
+                                <rect key="frame" x="20" y="60" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="drum" id="Bjd-ll-MwS"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yDL-k4-Qgr">
+                                <rect key="frame" x="20" y="20" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="bass" id="Juz-5W-RFB"/>
+                            </imageView>
+                            <slider verticalHuggingPriority="750" id="asj-Nu-V5R">
+                                <rect key="frame" x="69" y="18" width="189" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="omh-I9-op4"/>
+                                <connections>
+                                    <action selector="bassGainChanged:" target="-2" id="Y1U-LS-2Ub"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="rj6-n3-gqM">
+                    <rect key="frame" x="908" y="382" width="272" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <box title="On Stage Location" borderType="line" id="DYO-rm-tI0">
+                    <rect key="frame" x="905" y="105" width="278" height="271"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="9mi-YR-ykt">
+                        <rect key="frame" x="1" y="1" width="276" height="255"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="RKX-oK-dua">
+                                <rect key="frame" x="20" y="216" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="guitar1" id="3H5-X2-hHO"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jT7-xN-JNb">
+                                <rect key="frame" x="20" y="176" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="guitar2" id="BCP-he-Aq0"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hRW-W7-YCC">
+                                <rect key="frame" x="20" y="136" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="vocal" id="1kp-oX-Lfu"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="W4K-OA-Bdj">
+                                <rect key="frame" x="20" y="96" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="drum" id="xXV-Ny-25D"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sd5-bi-Diq">
+                                <rect key="frame" x="20" y="56" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="bass" id="TOD-Oc-kte"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="CER-Ru-mOJ">
+                                <rect key="frame" x="20" y="16" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="listener" id="xNy-jO-owZ"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wuf-dB-ywf">
+                                <rect key="frame" x="69" y="220" width="189" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="4PT-qC-YGJ">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="To8-xy-xCM">
+                                <rect key="frame" x="69" y="180" width="189" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="god-E8-vof">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="TTl-Iu-YfF">
+                                <rect key="frame" x="69" y="140" width="189" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="gfy-EK-Iei">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="QgN-fD-nGK">
+                                <rect key="frame" x="69" y="100" width="189" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="WTY-1D-eIv">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="yqu-mH-m4u">
+                                <rect key="frame" x="69" y="60" width="189" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="HmQ-L9-jSZ">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="puU-Gs-6q2">
+                                <rect key="frame" x="69" y="20" width="189" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="x:0 y:0" id="3I5-bx-e1s">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                </box>
+                <box title="Master Pitch (Playback Speed)" borderType="line" id="s22-f0-3Hh">
+                    <rect key="frame" x="905" y="405" width="278" height="69"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="MuS-0X-G0H">
+                        <rect key="frame" x="1" y="1" width="276" height="53"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider verticalHuggingPriority="750" id="5fY-B5-K5z">
+                                <rect key="frame" x="18" y="23" width="240" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="2" doubleValue="1" tickMarkPosition="above" numberOfTickMarks="1" sliderType="linear" id="WJu-8f-tbm"/>
+                                <connections>
+                                    <action selector="masterPitchChanged:" target="-2" id="hgi-Lm-rcQ"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+            </subviews>
+        </customView>
+    </objects>
+    <resources>
+        <image name="bass" width="300" height="300"/>
+        <image name="drum" width="300" height="300"/>
+        <image name="guitar1" width="225" height="225"/>
+        <image name="guitar2" width="300" height="300"/>
+        <image name="listener" width="48" height="48"/>
+        <image name="vocal" width="300" height="300"/>
+    </resources>
+</document>
